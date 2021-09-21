@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+ <head>            
+  <style>/* Reworked by IntelliJ Team The MIT License (MIT) Copyright (c) JetBrains Adapted from https://github.com/sindresorhus/github-markdown-css The MIT License (MIT) Copyright (c) Sindre Sorhus &lt;sindresorhus@gmail.com&gt; (sindresorhus.com) Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */ @font-face { font-family: octicons-anchor; src: url(data:font/woff;charset=utf-8;base64,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) format('woff'); } body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-family: Helvetica, Arial, freesans, sans-serif; font-size: 14px; line-height: 1.6; word-wrap: break-word; margin: 0 30px; } strong { font-weight: bold; } img { border: 0; } input { color: inherit; font: inherit; margin: 0; line-height: normal; } html input[disabled] { cursor: default; } input[type="checkbox"] { box-sizing: border-box; padding: 0; } body * { box-sizing: border-box; } input { font: 13px/1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; } a { text-decoration: none; } a:hover, a:active { text-decoration: underline; } hr { height: 1px; padding: 0; margin: 20px 0; border: 0 none; } hr:before { display: table; content: ""; } hr:after { display: table; clear: both; content: ""; } blockquote { margin: 0; } ul, ol { padding: 0; margin-top: 0; margin-bottom: 0; } ol ol, ul ol { list-style-type: lower-roman; } ul ul ol, ul ol ol, ol ul ol, ol ol ol { list-style-type: lower-alpha; } dd { margin-left: 0; } .octicon { font: normal normal normal 16px/1 octicons-anchor; display: inline-block; text-decoration: none; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; } .octicon-link:before { content: '\f05c'; } .markdown-body &gt; *:first-child { margin-top: 0 !important; } .markdown-body &gt; *:last-child { margin-bottom: 0 !important; } .anchor { position: absolute; top: 0; left: 0; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; } .anchor:focus { outline: none; } h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; } h1 .octicon-link, h2 .octicon-link, h3 .octicon-link, h4 .octicon-link, h5 .octicon-link, h6 .octicon-link { display: none; color: #000; vertical-align: middle; } h1:hover .anchor, h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover .anchor, h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; } h1:hover .anchor .octicon-link, h2:hover .anchor .octicon-link, h3:hover .anchor .octicon-link, h4:hover .anchor .octicon-link, h5:hover .anchor .octicon-link, h6:hover .anchor .octicon-link { display: inline-block; } h1 { font-size: 2.2em; padding-top: 0.6em; } h1 .anchor { line-height: 1; } h2 { font-size: 1.8em; line-height: 1.2; padding-top: 0.6em; } h2 .anchor { line-height: 1.2; } h3 { font-size: 1.3em; line-height: 1; padding-top: 0.6em; } h3 .anchor { line-height: 1.2; } h4 { font-size: 1em; } h4 .anchor { line-height: 1.2; } h5 { font-size: 1em; } h5 .anchor { line-height: 1.1; } h6 { font-size: 1em; } h6 .anchor { line-height: 1.1; } p, blockquote, ul, ol, dl, table, pre { margin-top: 16px; margin-bottom: 16px; } ul, ol { padding-left: 2em; } ul ul, ul ol, ol ol, ol ul { margin-top: 0; margin-bottom: 0; } li &gt; p { margin-top: 0; margin-bottom: 0; } dl { padding: 0; } dl dt { padding: 0; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; } dl dd { padding: 0 16px; margin-bottom: 16px; } blockquote { padding: 10px 10px 10px 16px; border-left: 2px solid; border-radius: 0 3px 3px 0; } blockquote &gt; :first-child { margin-top: 0; } blockquote &gt; :last-child { margin-bottom: 0; } table { display: block; width: 100%; overflow: auto; word-break: normal; border-collapse: collapse; border-spacing: 0; font-size: 1em; } table th { font-weight: bold; } table th, table td { padding: 6px 13px; background: transparent; } table tr { border-top: 1px solid; } img { max-width: 100%; box-sizing: border-box; } code { font: 0.9em "JetBrains Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace; padding: 0.2em 0.4em; margin: 2px; border-radius: 3px; } pre &gt; code { padding: 0; margin: 0; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0; } .highlight { margin-bottom: 16px; } .highlight pre, pre { font: 0.85em "JetBrains Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace; padding: 16px; overflow: auto; line-height: 1.45; border-radius: 3px; } pre code { display: inline; max-width: initial; padding: 0; margin: 0; overflow: initial; line-height: inherit; word-wrap: normal; background-color: transparent; border: 0; } pre code:before, pre code:after { content: normal; } kbd { font: 0.9em "JetBrains Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace; padding: 0.2em 0.4em; margin: 2px; border-radius: 3px; } .task-list-item { list-style-type: none; } .task-list-item + .task-list-item { margin-top: 3px; } .task-list-item input { margin: 0 0.35em 0.25em -0.6em; vertical-align: middle; } :checked + .radio-label { z-index: 1; position: relative; } span.user-del { text-decoration: line-through; } ::-webkit-scrollbar { width: 6px; height: 6px; } ::-webkit-scrollbar-thumb { -webkit-border-radius: 10px; } ::-webkit-scrollbar-track:vertical { -webkit-box-shadow: -1px 0 0 #ededed; } ::-webkit-scrollbar-track { background-color: transparent; } ::-webkit-scrollbar { width: 6px; } </style>
+  <style>body { background-color: rgba(43, 43, 43, 255.0); font-size: 14px !important; } body, p, blockquote, ul, ol, dl, table, pre, code, tr { color: rgba(169, 183, 198, 255.0); } a { color: rgba(88, 157, 246, 255.0); } table td, table th { border: 1px solid rgba(81, 81, 81, 255.0); } hr { background-color: rgba(81, 81, 81, 255.0); } kbd, tr { border: 1px solid rgba(81, 81, 81, 255.0); } h6 { color: rgba(120, 120, 120, 255.0); } blockquote { border-left: 2px solid rgba(88, 157, 246, 0.4); } ::-webkit-scrollbar-thumb { background-color: rgba(128, 128, 128, 0.34901960784313724); } blockquote, code, pre { background-color: rgba(212, 222, 231, 0.09803921568627451); }</style>
+ </head> 
+ <body>
+  <div md-src-pos="0..3173">
+   <h1 md-src-pos="0..20">Most Active Cookie</h1>
+   <p md-src-pos="22..130"><span md-src-pos="22..130">Cookie analyzer parse cookies given in csv file and gives back required output as per customer input filters</span></p>
+   <h2 md-src-pos="132..151">Technologies used</h2>
+   <ul md-src-pos="153..430">
+    <li md-src-pos="153..159">Java</li>
+    <li md-src-pos="160..222">Unit tests written with <a href="https://junit.org/junit5/" md-src-pos="186..222">JUnit 5</a></li>
+    <li md-src-pos="223..292">Integration tests written with <a href="https://junit.org/junit5/" md-src-pos="256..292">JUnit 5</a></li>
+    <li md-src-pos="293..361">Code coverage reports via <a href="https://www.jacoco.org/jacoco/" md-src-pos="321..361">JaCoCo</a></li>
+    <li md-src-pos="362..403">A Maven build that puts it all together</li>
+    <li md-src-pos="404..412">Docker</li>
+    <li md-src-pos="413..430">Shell Scripting</li>
+   </ul>
+   <h2 md-src-pos="432..452">Running the tests</h2>
+   <h3 md-src-pos="454..468">Docker Way</h3>
+   <ul md-src-pos="469..506">
+    <li md-src-pos="469..506">Go to <code md-src-pos="477..499">QuantCast_Assignment</code> folder</li>
+   </ul>
+   <ul md-src-pos="509..783">
+    <li md-src-pos="509..629"><p md-src-pos="511..533">Execute below commands</p><pre md-src-pos="536..629"><code md-src-pos="536..629"><span md-src-pos="536..540"></span><span md-src-pos="540..565">docker build -t myproj . </span>
+<span md-src-pos="566..566"></span>
+<span md-src-pos="567..617">docker run -ti -v /path/to/inputfiles:/test myproj</span>
+<span md-src-pos="618..618"></span><span md-src-pos="624..629"></span></code></pre></li>
+    <li md-src-pos="631..783"><p md-src-pos="633..694">Replace <code md-src-pos="641..662">/path/to/inputfiles</code> with folder path to input files</p>
+     <ul md-src-pos="698..783">
+      <li md-src-pos="698..783">This will mount the volume in Docker container so docker can access the input files</li>
+     </ul></li>
+   </ul>
+   <ul md-src-pos="788..1307">
+    <li md-src-pos="788..909">Please Enter the command and filename and date as below<pre md-src-pos="848..909"><code md-src-pos="848..909"><span md-src-pos="848..852"></span><span md-src-pos="852..901">most_active_cookie -f input1.csv -d 2018-12-09 -h</span>
+<span md-src-pos="902..902"></span><span md-src-pos="904..909"></span></code></pre></li>
+    <li md-src-pos="910..977"><code md-src-pos="912..932">most_active_cookie</code> is a command for fetching most active cookie</li>
+    <li md-src-pos="978..1071"><code md-src-pos="980..995">-f input1.csv</code> read the file from <em md-src-pos="1015..1036">/path/to/inputfiles</em> folder which was mounted in docker</li>
+    <li md-src-pos="1072..1127"><code md-src-pos="1074..1089">-d 2018-12-09</code> accepts the date in yyyy-mm-dd format</li>
+    <li md-src-pos="1128..1203"><code md-src-pos="1130..1134">-h</code> <strong md-src-pos="1135..1149">[optional]</strong> Used for skipping the first line if header is present</li>
+    <li md-src-pos="1204..1307"><code md-src-pos="1207..1218">-failfast</code> <strong md-src-pos="1219..1233">[optional]</strong> Used for skipping the bad data and proceed with other records in the file</li>
+   </ul>
+   <h3 md-src-pos="1309..1325">ShellScript</h3>
+   <ul md-src-pos="1327..1415">
+    <li md-src-pos="1327..1370"><code md-src-pos="1329..1369">./entry.sh -f input1.csv -d 2018-12-09</code> </li>
+    <li md-src-pos="1371..1415">Please use above command from shell script</li>
+   </ul>
+   <h3 md-src-pos="1417..1437">Execute from IDE</h3>
+   <ul md-src-pos="1438..1493">
+    <li md-src-pos="1438..1493">Pass below options as arguments to <code md-src-pos="1476..1493">MainApplication</code></li>
+   </ul>
+   <ul md-src-pos="1496..1823">
+    <li md-src-pos="1496..1589"><code md-src-pos="1498..1513">-f input1.csv</code> read the file from <em md-src-pos="1533..1554">/path/to/inputfiles</em> folder which was mounted in docker</li>
+    <li md-src-pos="1590..1645"><code md-src-pos="1592..1607">-d 2018-12-09</code> accepts the date in yyyy-mm-dd format</li>
+    <li md-src-pos="1646..1720"><code md-src-pos="1648..1652">-h</code> <strong md-src-pos="1653..1667">[optional]</strong> Used for process first line if header is not present</li>
+    <li md-src-pos="1721..1823"><code md-src-pos="1723..1734">-failfast</code> <strong md-src-pos="1735..1749">[optional]</strong> Used for skipping the bad data and proceed with other records in the file</li>
+   </ul>
+   <h2 md-src-pos="1826..1837">QA tests</h2>
+   <ul md-src-pos="1839..2127">
+    <li md-src-pos="1839..1879">To run the unit tests, call <code md-src-pos="1869..1879">mvn test</code></li>
+    <li md-src-pos="1880..1937">To run the integration tests as well, call <code md-src-pos="1925..1937">mvn verify</code></li>
+    <li md-src-pos="1938..2127">Code coverage reports are generated when <code md-src-pos="1981..1993">mvn verify</code> (or a full <code md-src-pos="2005..2024">mvn clean install</code>) is called. Point a browser at the output in <code md-src-pos="2072..2108">target/site/jacoco-both/index.html</code> to see the report.</li>
+   </ul>
+   <h2 md-src-pos="2129..2142">Core Logic</h2>
+   <h3 md-src-pos="2143..2160">Based on usage</h3>
+   <ul md-src-pos="2161..2218">
+    <li md-src-pos="2161..2218">Used Strategy pattern to pick the appropriate algorithm</li>
+   </ul>
+   <table md-src-pos="2220..2594">
+    <thead>
+     <tr md-src-pos="2220..2311">
+      <th align="center" md-src-pos="2221..2239">Load full file</th>
+      <th align="center" md-src-pos="2240..2251">Lazy Load</th>
+      <th align="center" md-src-pos="2252..2309">Database ( <a href="https://en.wikipedia.org/wiki/Trie" md-src-pos="2264..2306">trie</a> )</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr md-src-pos="2359..2396">
+      <td align="center" md-src-pos="2360..2371">O(logn)</td>
+      <td align="center" md-src-pos="2372..2382">O(n)</td>
+      <td align="center" md-src-pos="2383..2395">O(logn)</td>
+     </tr>
+     <tr class="intellij-row-even" md-src-pos="2397..2453">
+      <td align="center" md-src-pos="2398..2418">Binary search</td>
+      <td align="center" md-src-pos="2419..2440">Linear Search</td>
+      <td align="center" md-src-pos="2441..2452">Trie</td>
+     </tr>
+     <tr md-src-pos="2454..2594">
+      <td align="center" md-src-pos="2455..2488">Used in case of small files</td>
+      <td align="center" md-src-pos="2489..2524">Used in case of large files</td>
+      <td align="center" md-src-pos="2525..2593">Used for fetching most active record for(day/month/year/hour)</td>
+     </tr>
+    </tbody>
+   </table>
+   <h2 md-src-pos="2596..2606">Design</h2>
+   <h3 md-src-pos="2608..2626">Command pattern</h3>
+   <ul md-src-pos="2627..2735">
+    <li md-src-pos="2627..2735">Used to add new commands like <code md-src-pos="2659..2676">least_freq_used</code> etc without modifying existing code (Open-Close principle)</li>
+   </ul>
+   <p md-src-pos="2737..2760"><img src="README/images/command.png" alt="command" md-src-pos="2737..2760"></p>
+   <h3 md-src-pos="2762..2781">Strategy Pattern</h3>
+   <ul md-src-pos="2782..2839">
+    <li md-src-pos="2782..2839">Used Strategy pattern to pick the appropriate algorithm</li>
+   </ul>
+   <p md-src-pos="2841..2873"><img src="README/images/StrategyPattern.png" alt="Strategy" md-src-pos="2841..2873"></p>
+   <h3 md-src-pos="2875..2894">Iterator Pattern</h3>
+   <ul md-src-pos="2895..3036">
+    <li md-src-pos="2895..3036">Used Iterator Pattern to decide on <code md-src-pos="2932..2942">failfast</code> or <code md-src-pos="2946..2956">failsafe</code> and to decide on lazy load or load all at once <img src="README/images/IteratorPattern.png" alt="Iterator" md-src-pos="3004..3036"></li>
+   </ul>
+   <h3 md-src-pos="3038..3047">Output</h3>
+   <ul md-src-pos="3048..3131">
+    <li md-src-pos="3048..3131">Output stream can be changed without changing existing code <img src="README/images/Output.png" alt="output" md-src-pos="3110..3131"></li>
+   </ul>
+   <h3 md-src-pos="3133..3140">Flow</h3>
+   <p md-src-pos="3141..3170"><img src="README/images/quantcast-3.png" alt="quantcast" md-src-pos="3141..3170"></p>
+  </div>
+ </body>
+</html>
